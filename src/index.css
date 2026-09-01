@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f5f7f6;
+  color: #1c2b24;
+}
+
+.app-shell {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 24px;
+  background: #14532d;
+  color: white;
+}
+
+.brand {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.topbar nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  opacity: 0.85;
+}
+
+.topbar nav a.active {
+  opacity: 1;
+  border-bottom: 2px solid white;
+}
+
+main {
+  flex: 1;
+  overflow: hidden;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  height: 100%;
+}
+
+.map-section {
+  height: 100%;
+}
+
+.panel-section {
+  padding: 16px;
+  overflow-y: auto;
+  background: white;
+  border-left: 1px solid #ddd;
+}
+
+.risk-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.risk-score {
+  font-weight: bold;
+}
+
+.about-page {
+  padding: 32px;
+  max-width: 640px;
+}
