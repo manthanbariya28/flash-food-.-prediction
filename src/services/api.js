@@ -5,7 +5,7 @@ const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000
 // Mock data so frontend team can build the UI before the ML/backend is ready.
 // Once the backend module (see /backend) exposes a real /flood-risk endpoint,
 // swap MOCK_MODE to false.
-const MOCK_MODE = true
+const MOCK_MODE = false
 
 const MOCK_DATA = [
   { id: 1, name: 'Region A - Nainital', lat: 29.3919, lng: 79.4542, riskScore: 82, rainfallMm: 120 },

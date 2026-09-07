@@ -78,3 +78,54 @@ main {
   padding: 32px;
   max-width: 640px;
 }
+
+/* --- Added for map legend + alert banner --- */
+.dashboard-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.alert-banner {
+  background: #d32f2f;
+  color: white;
+  padding: 10px 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.dashboard-wrapper .dashboard-grid {
+  flex: 1;
+  min-height: 0;
+}
+
+.map-legend {
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+  background: white;
+  padding: 10px 14px;
+  border-radius: 6px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.3);
+  z-index: 1000;
+  font-size: 13px;
+}
+
+.legend-title {
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 4px;
+}
+
+.legend-item .dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
